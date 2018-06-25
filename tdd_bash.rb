@@ -9,4 +9,8 @@ class BashTdd < Minitest::Test
     def test_assert_that_winnum_has_value
         assert_equal("1", winnum()[0])
     end
+
+    def test_assert_that_winnum_has_value
+        assert_equal("2", winnum()[1])
+    end
 end
