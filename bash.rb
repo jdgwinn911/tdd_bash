@@ -1,4 +1,7 @@
 def mynum()
-    mynum = ["1", "2", "3", "4"]
+    mynum = []
 end
 
+def winnum()
+    winnum = ["1", "2", "5", "6"]
+end
