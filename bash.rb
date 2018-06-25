@@ -1,7 +1,4 @@
-def mynum()
-    mynum = []
+def check_for_match(myticket, winningticket)
+0
 end
 
-def winnum()
-    winnum = ["1", "2", "5", "6"]
-end
