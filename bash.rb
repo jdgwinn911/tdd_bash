@@ -6,7 +6,7 @@ def check_for_match(myticket, winningticket)
    matching_num = 0
    winning_ticket.each_with_index do |num, index|
     puts "num is #{num} and index is #{index} "
-        if num == myticket[index]
+        unless num == myticket[index]
             matching_num = matching_num + 1
         end
     end
@@ -14,6 +14,11 @@ def check_for_match(myticket, winningticket)
 end
 
 def check_for_match_arr(myticketarray, winningticket)
+    empty = []
+    myticketarray.each do |num| 
+        empty << check_for_match(num, winningticket)
+    end
+    empty
 end
 # def end_result(check_for_match(myticket, winningticket))
 # end
