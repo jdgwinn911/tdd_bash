@@ -15,4 +15,9 @@ class BashTdd < Minitest::Test
         assert_equal(2, check_for_match("1111", "1122"))
     end
 
+    def test_if_myticket_is_off
+        assert_equal([2,3,4], check_for_match_arr(["1222", "1235", "1234",], "1234"))
+    end
 end
+
+
