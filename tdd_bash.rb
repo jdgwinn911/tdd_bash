@@ -15,8 +15,7 @@ class BashTdd < Minitest::Test
         assert_equal(2, check_for_match("1111", "1122"))
     end
 
-#     def test_how_much_tickest_are_off_by
-#         assert_equal([2,3,4], check_for_match_arr(["1222", "1235", "1234",], "1234"))
-#     end
-# end
+    def test_how_much_tickest_are_off_by
+        assert_equal([2,1,0], check_for_match_arr(["1222", "1235", "1234",], "1234"))
+    end
 end
