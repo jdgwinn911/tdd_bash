@@ -24,6 +24,6 @@ class BashTdd < Minitest::Test
     end
 
     def test_if_winners_equal_2
-        assert_equal([2, 1], winarr(["1234", "1234", "1244", "1255"], ["1234", "1299"]))
+        assert_equal([2, 0], winarr(["1234", "1234", "1244", "1255"], ["1234", "1299"]))
     end
 end
