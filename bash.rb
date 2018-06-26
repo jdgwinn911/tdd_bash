@@ -20,8 +20,21 @@ def check_for_match_arr(myticketarray, winningticket)
     end
     empty
 end
-# def end_result(check_for_match(myticket, winningticket))
-# end
+
+def winarr(myticketarray, winningticket)
+    warr = []
+    winningticket.each do |num|
+        matches = check_for_match_arr(myticketarray, num)
+        winners = 0
+        matches.each do |m|
+            if m == 0
+                winners += 1
+            end
+        end
+        warr << winners
+    end
+    warr 
+end
 
 
  
