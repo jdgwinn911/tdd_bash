@@ -24,7 +24,7 @@ class BashTdd < Minitest::Test
     # end
 
     def test_if_winners_equal_2
-        assert_equal([2, 0], winarr(["1234", "1234", "1244", "1255"], ["1234", "1299"]))
+        assert_equal([[1, [1, 3]], [0, [1, 2, 3]]], winarr(["1234", "1235", "1112"], ["1234", "1244"]))
     end
 
     def test_if_1_off_return
@@ -32,6 +32,6 @@ class BashTdd < Minitest::Test
     end
 
     def test_offbys_are_in_order
-        assert_equal([[1, [2, 3]][2, 3]], winarr(["1234", "1235", "1112"], ["1234"]))
+        assert_equal([[1, [1, 3]]], winarr(["1234", "1235", "1112"], ["1234"]))
     end
 end

@@ -31,19 +31,26 @@ end
 
 def winarr(myticketarray, winningticket)
     warr = []
+    newarr = []
     winningticket.each do |num|
         matches = check_for_match_arr_2(myticketarray, num)
         winners = 0
+        losers = []
         matches.each do |m|
             if m == 0
                 winners += 1
+            else  
+                losers << m
             end
         end
-        warr << winners
-    end
-    warr 
-end
+        # winners.push losers
+        warr << winners 
+        warr << losers
+        newarr << warr  
 
+    end
+    newarr 
+end
 
 
  
