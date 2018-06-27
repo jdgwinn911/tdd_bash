@@ -5,7 +5,6 @@ def check_for_match(myticket, winningticket)
    puts "winning ticket is #{winning_ticket}"
    matching_num = 0
    winning_ticket.each_with_index do |num, index|
-    puts "num is #{num} and index is #{index} "
         unless num == myticket[index]
             matching_num = matching_num + 1
         end
