@@ -17,7 +17,6 @@ def check_for_match_arr(myticketarray, winningticket)
     myticketarray.each do |num| 
      check_for_match(num, winningticket)
      if check_for_match(num, winningticket) == 1
-        num = num 
         empty << num
      end 
     end
